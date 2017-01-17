@@ -1,4 +1,4 @@
-package com.lk.chatclient;
+package com.lk.mulchat.dome;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,11 @@ import io.netty.channel.Channel;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
-
+/**
+ * 多人聊天客户端（后开启）
+ * @author lkj41110
+ * @version time：2017年1月16日 下午9:55:41
+ */
 public class ClientMain {
 	private String host;
 	private int port;

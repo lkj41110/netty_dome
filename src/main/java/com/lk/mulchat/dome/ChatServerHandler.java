@@ -1,4 +1,4 @@
-package com.lk.chatclient;
+package com.lk.mulchat.dome;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;

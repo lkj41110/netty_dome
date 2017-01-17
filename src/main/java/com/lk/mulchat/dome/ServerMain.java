@@ -1,4 +1,4 @@
-package com.lk.chatclient;
+package com.lk.mulchat.dome;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -6,7 +6,11 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-
+/**
+ * 多人聊天例子服务器
+ * @author lkj41110
+ * @version time：2017年1月16日 下午9:54:55
+ */
 public class ServerMain {
 
 	private int port;
