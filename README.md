@@ -9,11 +9,13 @@ Netty 的内部实现时很复杂的，但是 Netty 提供了简单易用的 api
 - [Java NIO介绍（一）————Buffer和Channels简单介绍](http://blog.csdn.net/qq_25673113/article/details/53203692)
 - [Java NIO介绍（二）————无堵塞io和Selector简单介绍](http://blog.csdn.net/qq_25673113/article/details/53284732)
 - NIO与IO的区别
+
 #### Netty_dome[项目中的例子]
 - 多人聊天
 - 传输自定义类(注意需要序列化传输的类)
 - 以IO为基础的socket形式进行网络传输例子
 - 以NIO为基础的网络传输例子
+
 #### Netty的十个核心类的用法
 - Bootstrap or ServerBootstrap
 - EventLoop
