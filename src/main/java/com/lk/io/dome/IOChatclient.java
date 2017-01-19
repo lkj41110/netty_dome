@@ -1,4 +1,4 @@
-package com.lk.io;
+package com.lk.io.dome;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
