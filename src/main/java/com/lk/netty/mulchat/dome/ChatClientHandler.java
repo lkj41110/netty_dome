@@ -1,4 +1,4 @@
-package com.lk.mulchat.dome;
+package com.lk.netty.mulchat.dome;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

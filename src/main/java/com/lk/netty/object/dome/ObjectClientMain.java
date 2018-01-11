@@ -1,4 +1,4 @@
-package com.lk.object.dome;
+package com.lk.netty.object.dome;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;

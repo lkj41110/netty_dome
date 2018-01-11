@@ -1,4 +1,4 @@
-package com.lk.mulchat.dome;
+package com.lk.netty.mulchat.dome;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;

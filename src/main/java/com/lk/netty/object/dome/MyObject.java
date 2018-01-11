@@ -1,4 +1,4 @@
-package com.lk.object.dome;
+package com.lk.netty.object.dome;
 
 import java.io.Serializable;
 

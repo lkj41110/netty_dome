@@ -1,4 +1,4 @@
-package com.lk.mulchat.dome;
+package com.lk.netty.mulchat.dome;
 
 import java.io.BufferedReader;
 import java.io.IOException;

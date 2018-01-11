@@ -1,9 +1,9 @@
-package com.lk.object.dome;
-
-import java.util.Random;
+package com.lk.netty.object.dome;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+
+import java.util.Random;
 
 public class ObjectClientHandler extends SimpleChannelInboundHandler<Object> {
 
