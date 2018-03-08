@@ -1,14 +1,14 @@
 package com.lk.netty.mulchat.dome;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 /**
  * 多人聊天客户端（后开启）
  * @author lkj41110
@@ -29,15 +29,19 @@ public class ClientMain {
 	}
 
 	public void run() throws IOException {
+	    //设置一个worker线程，使用
 		EventLoopGroup worker = new NioEventLoopGroup();
 		Bootstrap bootstrap = new Bootstrap();
 		bootstrap.group(worker);
+		//指定所使用的 NIO 传输 Channel
 		bootstrap.channel(NioSocketChannel.class);
 		bootstrap.handler(new ClientIniterHandler());
 
 		try {
+		    //使用指定的 端口设置套 接字地址
 			Channel channel = bootstrap.connect(host, port).sync().channel();
 			while (true) {
+			    //向服务端发送内容
 				BufferedReader reader = new BufferedReader(
 						new InputStreamReader(System.in));
 				String input = reader.readLine();
@@ -52,14 +56,6 @@ public class ClientMain {
 			e.printStackTrace();
 			System.exit(1);
 		}
-	}
-
-	public boolean isStop() {
-		return stop;
-	}
-
-	public void setStop(boolean stop) {
-		this.stop = stop;
 	}
 
 }
