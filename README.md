@@ -26,4 +26,4 @@ Netty 的内部实现时很复杂的，但是 Netty 提供了简单易用的 api
 - Channel
 - Future or ChannelFuture
 - ChannelInitializer
-- ChannelHandler
+- ChannelHandler 
