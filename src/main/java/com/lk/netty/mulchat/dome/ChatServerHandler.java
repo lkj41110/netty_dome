@@ -1,6 +1,7 @@
 package com.lk.netty.mulchat.dome;
 
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.group.ChannelGroup;
@@ -10,6 +11,7 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 /**
  * 服务器主要的业务逻辑
  */
+@ChannelHandler.Sharable
 public class ChatServerHandler extends SimpleChannelInboundHandler<String> {
 
     //保存所有活动的用户
