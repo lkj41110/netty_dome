@@ -5,25 +5,42 @@ Netty 的内部实现时很复杂的，但是 Netty 提供了简单易用的 api
 于 NIO 实现的，所以整个 Netty 都是异步的。
 
 
-#### NIO和IO总结
+## NIO和IO总结
 - [Java NIO介绍（一）————Buffer和Channels简单介绍](http://blog.csdn.net/qq_25673113/article/details/53203692)
 - [Java NIO介绍（二）————无堵塞io和Selector简单介绍](http://blog.csdn.net/qq_25673113/article/details/53284732)
 - [NIO解析(王烨)](http://mp.weixin.qq.com/s/HhwaXd8x7zONr8N1ojSnsQ)
 - IO模型
 
-#### Netty_dome[项目中的例子]
+## Netty_dome[项目中的例子]
 - 多人聊天
 - 传输自定义类(注意需要序列化传输的类)
 - 以IO为基础的socket形式进行网络传输例子
 - 以NIO为基础的网络传输例子
 
-#### Netty的学习：
+## Netty的文章：
 - [Netty介绍（一）————为什么使用Netty](http://blog.csdn.net/qq_25673113/article/details/54631883)
-- Bootstrap or ServerBootstrap
+
+#### byteBuf
+- byteBuf
+
+#### EventLoop和线程模型
 - EventLoop
 - EventLoopGroup
+
+#### handler
+- ChannelHandler
+- EmbeddedChannel使用测试handler组件
+
+- Bootstrap or ServerBootstrap
 - ChannelPipeline
 - Channel
 - Future or ChannelFuture
 - ChannelInitializer
-- ChannelHandler 
+
+## 项目中的netty
+- dubbo的netty
+- dubbo的qos的netty
+- es的netty
+
+
+ 
