@@ -70,7 +70,7 @@ public class NIOClient {
                 } else if (selectionKey.isWritable()) {        // 给客户端注册写事件
                     sendbuffer.clear();
                     client = (SocketChannel) selectionKey.channel();
-                    String sendText = "message from client--" + (index++);
+                    String sendText = "你好！我试用来测试装包拆包的，哈哈哈哈或。哈哈哈哈或或" + (index++);
                     sendbuffer.put(sendText.getBytes());
                     sendbuffer.flip();
                     client.write(sendbuffer);
